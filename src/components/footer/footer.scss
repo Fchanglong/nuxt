@@ -1,0 +1,31 @@
+.footer{
+    font-size: 14px;
+    .container{
+        padding: 15px !important;
+        // max-width: 1140px;
+        .supplier{
+            text-align: center;
+            img{
+                display: inline-block;
+                height: 26px;
+                padding: 3px;
+            }
+
+        }
+    }
+    .copyright{
+        color: #808080;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        a{
+            color: #808080;
+        }
+    }
+    
+}
+// @media (max-width:1200px) {
+//     .container{
+//         max-width: 960px;
+//     }
+// }

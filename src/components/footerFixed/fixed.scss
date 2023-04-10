@@ -1,0 +1,263 @@
+.chat .nextStep.notEmpty .btn-cart {
+    background-color: #f36
+}
+
+.chat .action-list button {
+    border-radius: 50%;
+    border-width: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2), 3px 3px 3px rgba(0, 0, 0, .3);
+    font-size: 30px;
+    height: 60px;
+    padding: 0;
+    width: 60px;
+    position: relative;
+
+}
+
+.chat .btn-action {
+    background-color: #932c8b;
+    color: #fff !important
+}
+
+.chat .btn-action:hover {
+    background-color: #932c8b;
+
+}
+
+.chat .nextStep .btn-cart {
+    background-color: #fff;
+    color: #3e3d3d !important;
+    z-index: 2
+}
+
+.chat .nextStep.notEmpty .btn-cart {
+    color: #fff !important
+}
+
+.chat .nextStep {
+    position: relative
+}
+
+.chat .nextStep .goCar {
+    color: #000;
+    font-size: 30px;
+    opacity: 0
+}
+
+.chat .nextStep.go .goCar {
+    animation: go-car 1s ease-in-out;
+    margin-left: 10px;
+    opacity: .5;
+    transform: translateX(0)
+}
+
+.chat .text {
+    font-size: 16px;
+    line-height: 16px
+}
+
+.chat .btn-action>.text {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: all .3s
+}
+
+.chat .btn-action>i {
+    opacity: 0;
+    transform: rotate(-1turn);
+    transition: all .3s
+}
+
+.chat.active .btn-action>.text {
+    opacity: 0;
+    transform: rotate(1turn)
+}
+
+.chat.active .btn-action>i {
+    opacity: 1;
+    transform: rotate(0deg)
+}
+
+.chat {
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    z-index: 1001
+}
+
+
+
+.chat ul.chat-list {
+    margin-bottom: 7px;
+    padding: 0 3px
+}
+
+.chat ul.chat-list>li {
+    display: none;
+    margin-bottom: 5px;
+    padding-left: 0;
+    position: relative;
+    a{
+        display: block;
+        width: 54px;
+        height: 54px;
+    }
+}
+
+.chat ul.chat-list.notFold>li {
+    display: block
+}
+
+.chat ul.chat-list.notFold {
+    padding: 0
+}
+
+.chat ul.chat-list.notFold>li>button {
+    height: 60px;
+    width: 60px
+}
+
+.chat ul.chat-list.notFold>li>button img {
+    height: 35px
+}
+
+.chat ul.chat-list>li>button {
+    background-color: #666;
+    border-radius: 50%;
+    border-width: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2), 3px 3px 3px rgba(0, 0, 0, .3);
+    color: #fff;
+    height: 54px;
+    padding: 0;
+    width: 54px
+}
+
+.chat ul.chat-list>li>button.phone,
+.chat ul.chat-list>li>button.phone:hover {
+    background-color: #ec5923
+}
+
+.chat ul.chat-list>li>button.color-fb,
+.chat ul.chat-list>li>button.color-fb:hover {
+    background-color: #0084ff !important
+}
+
+.chat ul.chat-list>li>button.color-line,
+.chat ul.chat-list>li>button.color-line:hover {
+    background-color: #03c302 !important
+}
+
+.chat ul.chat-list>li>button img {
+    height: 25px
+}
+
+.chat ul.chat-list>li>button:hover {
+    background-color: #666;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2), 3px 3px 3px rgba(0, 0, 0, .3);
+    color: #fff
+}
+
+.chat ul.chat-list>li>div {
+    background-color: rgba(62, 62, 62, .8);
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 55px;
+    padding: 3px 10px;
+    position: absolute;
+    right: 70px;
+    text-align: center;
+    top: 13px
+}
+
+.chat ul.chat-list.notFold>li>div {
+    display: none
+}
+
+.hide {
+    display: none !important;
+}
+
+.action-list i {
+    bottom: 0;
+    left: 0;
+    line-height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.action-list>li {
+    padding-left: 0
+}
+
+.action-list>li:not(:last-of-type) {
+    margin-bottom: 7px;
+}
+
+//购买
+
+// .add-to-cart-flag {
+//     right: 60px;
+//     top: 13px
+// }
+.add-to-cart-flag {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    opacity: 0;
+    padding: 3px 10px;
+    position: absolute;
+    right: 70px;
+    text-align: center;
+    top: 17px;
+    transform: translateX(160px);
+    width: 150px;
+    &:after {
+        border-color: transparent transparent transparent rgba(0, 0, 0, .7);
+        border-style: solid;
+        border-width: 5px 0 5px 8px;
+        content: "";
+        display: table;
+        height: 0;
+        position: absolute;
+        right: -8px;
+        top: 9px;
+        width: 0
+    }
+}
+
+.add-to-cart-flag.active {
+    animation: right-in 4s ease-in-out
+}
+@keyframes right-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px)
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+.goTopBtn {
+    .btn-top{
+        background-color: #fff;
+        i{
+            font-size: 20px;
+        }
+    }
+}
+
+.display{
+    display: none;
+}
